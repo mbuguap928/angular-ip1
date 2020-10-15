@@ -1,1 +1,8 @@
-<p>quote works!</p>
+
+<div>
+   <p>{{title}}</p>
+   <div *ngFor= "let quoteEntry of quoteEntries">
+       {{quoteEntry.title}}
+       <app-quote-details [quoteEntry]="quoteEntry"></app-quote-details>
+   </div>
+</div>
